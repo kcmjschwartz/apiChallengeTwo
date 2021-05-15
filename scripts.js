@@ -26,9 +26,9 @@ async function fetchHolidayInfo(e){
 
 
 function displayHolidays(infoReturned){
-    // while (holidayResults.firstChild) {
-    //     holidayResults.removeChild(holidayResults.firstChild);
-    // };
+    while (holidayResults.firstChild) {
+        holidayResults.removeChild(holidayResults.firstChild);
+    };
         resultsInfo.style.visibility = "";
     
     let holidayInfo = infoReturned.response.holidays;
