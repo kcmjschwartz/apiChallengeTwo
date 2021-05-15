@@ -9,9 +9,10 @@
     <title>World Holidays</title>
 </head>
 <body>
+  <header>
     <h2>World Holidays</h2>
-    <br>
-    <br>
+  </header>
+    
     <section class='countryYearForm'>
     <div>
     <form id = 'submitForm'>
@@ -31,12 +32,34 @@
               <option value="observance">Observance</option>
             </select>
           </div>
-          <div>
-          <button type="submit"class="btn btn-primary">Submit</button>
-        </div>
+          
+          
+          <button type="submit"class="btn btn-primary" id="submitButton">Submit</button>
+        
     </form>
+    <!-- <div>
+      <button type="submit"class="btn btn-primary">Submit</button>
+    </div> -->
+
     </div>
+    
     </section>
+    <section class="resultsSection">
+    
+      <table class="table resultsTable">
+        <thead>
+          <tr>
+            <th scope="col">Holiday</th>
+            <th scope="col">Date</th>
+            <th scope="col">Description</th>
+            
+          </tr>
+        </thead>
+        <tbody class="resultsDisplay">
+        </tbody>
+    
+    </table>
+  </section>
 
     <script src="./scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
