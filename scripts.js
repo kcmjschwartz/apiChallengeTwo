@@ -21,7 +21,6 @@ async function fetchHolidayInfo(e){
     let infoReturned = await response.json()
     console.log(infoReturned);
     displayHolidays(infoReturned);
-
 }
 
 
@@ -51,3 +50,5 @@ function displayHolidays(infoReturned){
         cell2.innerHTML = `${holidayMonth}/${holidayDay}/${holidayYear}`;
         cell3.innerHTML = holidayDescription;
     }};
+
+

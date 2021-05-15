@@ -13,12 +13,13 @@ header{
     /* max-width: 300px; */
     border:2px solid black;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     
-    
-   
-    
+}
+
+p {
+    font-size: 14px;
 }
 .countryYearForm{
         display:flex;
@@ -28,7 +29,7 @@ header{
 }
 #submitButton{
     margin-top: 32px; 
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-left: 5px
 }
 
