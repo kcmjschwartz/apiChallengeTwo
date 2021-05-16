@@ -1,42 +1,17 @@
-body { background-image: url(./assets/worldbackground.jpg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
+body {
     
 }
 header{
     text-align: center;
 }
-#submitForm{
-    left:auto;
-    right:auto;
-    /* text-align: center; */
-    /* max-width: 300px; */
-    border:2px solid black;
-    border-radius: 3px;
-    padding: 10px;
-    display: flex;
-    
-}
+
 
 p {
+    text-align: center;
     font-size: 14px;
 }
-.countryYearForm{
-        display:flex;
-        justify-content:center;
-        
-    
-}
-#submitButton{
-    margin-top: 32px; 
-    margin-bottom: 50px;
-    margin-left: 5px
-}
 
-.resultsSection{
-    display:flex;
-    justify-content:center;
-}
+
 
 .resultsTable{
     border:2px solid black;

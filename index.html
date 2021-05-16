@@ -12,43 +12,45 @@
   <header>
     <h2>World Holidays</h2>
   </header>
-    
-    <section class='countryYearForm'>
-    <div>
-    <form id = 'submitForm'>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Country Code</label>
-            
-            <input type="text" maxlength = "2"class="form-control country" id="exampleFormControlInput1" placeholder="US" required>
-            <p>Click this <a href ="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">link</a> for a full list of country codes</p>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput2" class="form-label">Year</label>
-            <input type="number" class="form-control year" id="exampleFormControlInput2" placeholder="YYYY" min="1900" max="2099" required>
-          </div>
-          <div>
-            <label for="exampleFormControlInput2" class="form-label">Holiday Type</label>
-            <select class="form-select holidayType" aria-label="Default select example">
+    <br>
+    <br>
+    <section class='container countryYearForm'>
+    <div class="d-flex justify-content-center">
+      <form class="row row-cols-lg-auto g-3 align-items-center" id = 'submitForm'>
+        
+        <div class="col-12">
+            <label for="inlineFormInputGroupCountryCode" class="visually-hidden">Country Code</label>
+            <div class="inputgroup">
+            <input type="text" maxlength = "2"class="form-control country" id="inlineFormInputGroupCountryCode" placeholder="Country Code" required></div>
+           
+
+        </div>
+        <div class="col-12">
+            <label for="inlineFormGroupYear" class="visually-hidden">Year</label>
+            <input type="number" class="form-control year" id="inlineFormGroupYear" placeholder="Year" min="1900" max="2099" required>
+        </div>
+        <div class="col-12">
+            <label for="inlineFormSelectHType" class="visually-hidden">Holiday Type</label>
+            <select class="form-select holidayType" aria-label="Default select example" id =inlineFormSelectHType required>
               <option value="national">National</option>
               <option value="religious">Religious</option>
               <option value="observance">Observance</option>
             </select>
-          </div>
-          
-          
+        </div>
+        <br>
+        <div class="col-12">
           <button type="submit"class="btn btn-primary" id="submitButton">Submit</button>
-        
-    </form>
-    <!-- <div>
-      <button type="submit"class="btn btn-primary">Submit</button>
-    </div> -->
+        </div>
+      
+      </form>
+  
 
     </div>
-    
+    <p>Click this <a href ="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">link</a> for a full list of country codes</p>
     </section>
     <br>
     <section class="resultsSection">
-    
+      <div class="d-flex justify-content-center">
       <table class="table resultsTable">
         <thead>
           <tr>
@@ -62,6 +64,7 @@
         </tbody>
     
     </table>
+      </div>
   </section>
 
     <script src="./scripts.js"></script>
