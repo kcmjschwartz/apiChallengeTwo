@@ -3,6 +3,7 @@ const baseUrl = 'https://calendarific.com/api/v2/holidays';
 const key = '374a137e66a0737672e2816b140a3fdf0be28d3b';
 const searchForm = document.querySelector('form');
 const resultsInfo = document.querySelector('.resultsTable')
+const globe = document.querySelector('.resultsSection')
 const holidayResults= document.querySelector('.resultsDisplay')
 
 const enteredCountry = document.querySelector('.country');
@@ -29,6 +30,8 @@ function displayHolidays(infoReturned){
         holidayResults.removeChild(holidayResults.firstChild);
     };
         resultsInfo.style.visibility = "";
+      
+       
     
     let holidayInfo = infoReturned.response.holidays;
        console.log(holidayInfo);

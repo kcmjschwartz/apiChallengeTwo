@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+    
+
+}
+header{
+    text-align: center;
+   
+}
+
+
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.resultsSection{
+    background: url(./assets/nasa-vhSz50AaFAs-unsplash.jpg) no-repeat center;
+    height: 120vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+.resultsTable{
+    border:2px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    max-width: 800px;
+    background-color:rgba(0, 0, 0, 0.658);
+
+}
+
