@@ -28,7 +28,7 @@ function displayCountries(countriesReturned){
     console.log(countryInfo);
     for(let i = 0; i < countryInfo.length; i++) {
         let countryName = countryInfo[i].country_name;
-        let countryCode = countryInfo[i].iso-3166;
+        let countryCode = countryInfo[i]['iso-3166'];
 
         let countryOption = document.createElement('option');
 
@@ -49,6 +49,8 @@ async function fetchHolidayInfo(e){
     console.log(response);
     let infoReturned = await response.json()
     console.log(infoReturned);
+    // let flagUrl = 'https://restcountries.eu/rest/v2/alpha/'+ enteredCountry.value
+    // let imageChange = await fetch(https://restcountries.eu/rest/v2/alpha/)
     displayHolidays(infoReturned);
 }
 
