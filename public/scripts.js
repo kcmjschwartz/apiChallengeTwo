@@ -15,7 +15,7 @@ resultsInfo.style.visibility = "hidden";
 
 
 async function loadCountries( ){
-    let response1 = await fetch('https://restcountries.eu/rest/v2/all');
+    let response1 = await fetch('https://calendarific.com/api/v2/countries?api_key=374a137e66a0737672e2816b140a3fdf0be28d3b');
     console.log(response1);
     let countriesReturned = await response1.json()
     console.log(countriesReturned);
@@ -24,11 +24,11 @@ async function loadCountries( ){
 loadCountries();
 
 function displayCountries(countriesReturned){
-    let countryInfo = countriesReturned;
+    let countryInfo = countriesReturned.response.countries;
     console.log(countryInfo);
     for(let i = 0; i < countryInfo.length; i++) {
-        let countryName = countryInfo[i].name;
-        let countryCode = countryInfo[i].alpha2Code;
+        let countryName = countryInfo[i].country_name;
+        let countryCode = countryInfo[i].iso-3166;
 
         let countryOption = document.createElement('option');
 
@@ -38,8 +38,7 @@ function displayCountries(countriesReturned){
         enteredCountry.appendChild(countryOption);    
     }};
 
-
-    
+  
 
 
 async function fetchHolidayInfo(e){
